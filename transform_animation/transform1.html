@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        .box-container {
+            display:flex;
+        }
+        .box {
+            width:100px;
+            height:100px;
+            border:2px solid #000;
+            background:rgba(255, 255, 0, 0.7);
+        }
+        .box:hover {
+            /* transform:scale(2) rotate(15deg); 크기, 회전 */
+            /* transform:skew(30deg); 비틀기, 방향은 X,Y를 붙여 조절가능 */
+            /* transform: translate(30px, 10px); 이동(x축, y축) */
+            /* transform:translateX(30px); */
+
+            transform: scale(1.5);
+            transform-origin:left top; /* 기준점 변경(가로, 세로), default는 중앙 */
+            transform-origin:30% 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Transform</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis nostrum obcaecati vitae necessitatibus?
+        Ratione, suscipit illum vitae amet nesciunt quia placeat esse dolore quis perferendis unde illo nemo, in sunt
+        quidem. Sed, id. Excepturi reprehenderit omnis nulla. Ad hic iusto odit amet debitis molestias numquam
+        dignissimos consequuntur aliquam. Quis quod deserunt nesciunt aliquid hic alias magni totam eos fugit ullam enim
+        explicabo culpa dignissimos nobis repellat corrupti accusamus voluptatum officia, ipsa neque? Corrupti laborum
+        commodi, mollitia officiis fuga eaque corporis odio asperiores sint minus harum nihil autem vero similique
+        quibusdam! Error eligendi odio maiores totam cumque quidem id ducimus repellat.</p>
+    <div class="box-container">
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+        <div class="box">D</div>
+        <div class="box">E</div>
+    </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis nostrum obcaecati vitae necessitatibus?
+        Ratione,
+        suscipit illum vitae amet nesciunt quia placeat esse dolore quis perferendis unde illo nemo, in sunt quidem.
+        Sed,
+        id. Excepturi reprehenderit omnis nulla. Ad hic iusto odit amet debitis molestias numquam dignissimos
+        consequuntur
+        aliquam. Quis quod deserunt nesciunt aliquid hic alias magni totam eos fugit ullam enim explicabo culpa
+        dignissimos
+        nobis repellat corrupti accusamus voluptatum officia, ipsa neque? Corrupti laborum commodi, mollitia officiis
+        fuga
+        eaque corporis odio asperiores sint minus harum nihil autem vero similique quibusdam! Error eligendi odio
+        maiores
+        totam cumque quidem id ducimus repellat.</p>
+</body>
+
+</html>
