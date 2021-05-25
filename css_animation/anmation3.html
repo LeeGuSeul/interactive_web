@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation3 - Image Sprite</title>
+    <style>
+        @keyframes spaceship-ani {
+            /* 0%(시작점)은 생략가능 */
+            /* 0%는 from, 100% to로 쓸 수 있다.*/
+            100% { 
+                background-position:-2550px 0;
+            }
+        }
+        body {
+            background:#222;
+        }
+        .spaceship {
+            width:150px;
+            height:150px;
+            background: url(images/sprite_spaceship.png) no-repeat 0 0 / auto 150px /* image size */;
+            animation: spaceship-ani 1s infinite reverse steps(17);
+            /* steps() : 애니메이션 변화 단계를 설정할 수 있다. */
+            /* gif를 쓰지 않고 css로 하는 이유?  
+                1. git는 투명도가 있으면 배경색이 있을 경우 지저분해 보인다.
+                2. 속도같은 부가적인 요소를 css로 조정 가능
+             */
+        }
+    </style>
+</head>
+<body>
+    <div class="spaceship"></div>
+</body>
+</html>
